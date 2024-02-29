@@ -1,5 +1,5 @@
 #include<iostream>
-int array_sum(int[], int);
+extern int array_sum(int[], int);
 
 int main()
 {
