@@ -4,9 +4,12 @@ int num_count(int array[], int n, int number)
         return 0;
     }
     else{
+        int count=0;
         for (int i=0; i<n; i++){
-            number++;
+            if (number==array[i]) {
+                count++
+            }
         }
-        return number;
+        return count++;
     }
 }
