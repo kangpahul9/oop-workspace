@@ -1,7 +1,7 @@
 #include<iostream>
 int main()
 {
-    int n=75;int i=0;int arr[n];
+    int n=89506;int i=0;int arr[n];
     while (n!=0) {
         arr[i]=n%2;
         n=n/2;
