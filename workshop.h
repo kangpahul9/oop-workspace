@@ -1,7 +1,6 @@
 void changeValue(double * ptr)
 {
    *ptr=42;
-    std::cout<<*ptr<<std::endl;
 };
 void printArray(double*ptr1,int size)
 {
