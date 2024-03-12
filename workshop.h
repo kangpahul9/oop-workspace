@@ -6,17 +6,17 @@ void printArray(double*ptr1,int size)
 {
     for (int i=0; i<size; i++)
     {
-        std::cout<<ptr1[i]<<" ";
+        std::cout<<*(ptr1+i)<<" ";
         
     }
     std::cout<<std::endl;
 };
-double arrayMax(double*ptr2, int &size)
+double arrayMax(double*p, int &size)
 {
     double max=0;
     for (int i=0; i<size-1; i++) {
-        if (ptr2[i]>=ptr2[i+1]) {
-            max=ptr2[i];
+        if (p[i]>=p[i+1]) {
+            max=p[i];
         }
     }
     return max;
@@ -34,6 +34,6 @@ double* dynamicArray(int N,double M)
         std::cout<<arr[i]<<" ";
     }
     std::cout<<'\n'<<arrayMax(arr,N)<<'\n';
-    delete[] arr;
+   
     return 0;
 };
