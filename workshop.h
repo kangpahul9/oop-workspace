@@ -29,11 +29,5 @@ double* dynamicArray(int N,double M)
         arr[i]=M;
         
     }
-    for (int i=0; i<N; i++)
-    {
-        std::cout<<arr[i]<<" ";
-    }
-    std::cout<<'\n'<<arrayMax(arr,N)<<'\n';
-   
-    return 0;
+    return arr;
 };
