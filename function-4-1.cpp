@@ -2,7 +2,7 @@
 int *readNumbers()
 {
     int * numbers=new int[10];
-    for(int i=0;i<10;i++)
+    for(int i=0;i<4;i++)
     {
         std::cin>>numbers[i];
     }
@@ -10,16 +10,17 @@ int *readNumbers()
 };
 int secondSmallestSum(int *numbers,int length)
 {
-    int sum=99999999;
-    int secondsum=99999999;int temp=0;
+    int secondsum=99999;int isec=99999;
     for (int i=0; i<length; i++) {
-            if (secondsum>numbers[i]) {
-                secondsum=numbers[i];
-                if (sum>secondsum) {
-                    temp=sum;
-                    sum=secondsum;
-                    secondsum=temp;
-                }
+        int sum=0;
+        for (int j=i; j<length; j++) {
+            sum+=numbers[j];
+            if (sum<isec) {
+                secondsum=isec;
+                isec=sum;}
+          else if (sum<secondsum && sum!=isec) {
+                    secondsum=sum;
+           }
         }
     }
     return secondsum;

@@ -15,9 +15,6 @@ int *reverseArray(int *numbers1,int length)
         t--;
         temp[t]=numbers1[i];
     }
-    for (int j=0; j<length; j++) {
-        std::cout<<temp[j]<<'\n';
-    }
     return temp;
 }
 bool equalsArray(int *numbers1,int *numbers2,int length)
