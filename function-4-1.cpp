@@ -15,10 +15,11 @@ int secondSmallestSum(int *numbers,int length)
         int sum=0;
         for (int j=i; j<length; j++) {
             sum+=numbers[j];
+            std::cout<<"subset"<<sum<<'\n';
             if (sum<isec) {
                 secondsum=isec;
                 isec=sum;}
-          else if (sum<secondsum && sum!=isec) {
+          else if (sum<secondsum) {
                     secondsum=sum;
            }
         }
