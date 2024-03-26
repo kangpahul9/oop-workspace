@@ -1,4 +1,4 @@
-#include"orchestra.h"
+#include"Orchestra.h"
 #include"Musician.h"
 
     Orchestra::Orchestra() : curr_size(0) {}
