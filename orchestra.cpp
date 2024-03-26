@@ -4,14 +4,14 @@
     Orchestra::Orchestra() : curr_size(0) {}
     
     Orchestra::Orchestra(int size) {
-        curr_size = 0; 
-        max_size = size; 
+        curr_size = 0;
+        max_size = size;
         members = new Musician[size];
      }
     int Orchestra::get_current_number_of_members(){return curr_size;}
     bool Orchestra::has_instrument(std::string instrument){
-        //loop through the members array 
-        // get instrument  : members[i].get_instrument 
+        //loop through the members array
+        // get instrument  : members[i].get_instrument
         //compare this with the parameters' instrument
         for (int i = 0; i < curr_size; i++)
         {
@@ -37,3 +37,4 @@
     Orchestra::~Orchestra() {
         delete[] members;
     }
+

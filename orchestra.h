@@ -7,7 +7,7 @@ class Orchestra
 {
 private:
     int max_size;
-    Musician* members; //dynamic array to store the musician objects 
+    Musician* members; //dynamic array to store the musician objects
     int curr_size;
 
 public:
@@ -21,3 +21,4 @@ public:
     ~Orchestra();
 };
 #endif
+
